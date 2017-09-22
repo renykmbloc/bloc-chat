@@ -5,6 +5,9 @@
             <li class="room-item" ng-repeat="room in home.rooms">
                 {{room.$value}}
             </li>
+            <li ng-controller="ModalCtrl as modal">
+                <button type="button" class="btn btn-default" ng-click="modal.open()">New Room</button>
+            </li>
         </ul>
     </div>
     
